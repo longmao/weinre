@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	test
+<script src="http://172.30.120.124:8081/target/target-script-min.js#anonymous"></script>
+<script type="text/javascript" src="https://appx/web-view.min.js"></script>
+
+<script>
+
+
+// javascript
+
+// 网页向E应用 postMessage 消息
+// dd.postMessage({name:"测试web-view"});
+
+// 接收来自E应用的消息。
+dd.onMessage = function(e) {
+  console.log(e); //{'sendToWebView': '1'}
+}
+
+</script>
+</body>
+</html>
